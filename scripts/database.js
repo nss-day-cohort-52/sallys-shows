@@ -52,3 +52,7 @@ const database = {
     }
   ]
 }
+
+export const getArtists = () => {
+  return database.artists.map(artist => ({...artist}))
+}
